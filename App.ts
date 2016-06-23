@@ -1,4 +1,6 @@
 import {Directory} from './App/Configuration';
-import {SitesWatcher} from './App/DirectoryListener';
+import {WatchManager} from './App/Listener';
 
-var siteW = new SitesWatcher(Directory.SitePath)
+
+
+var nn = new WatchManager(Directory.SitePath);
