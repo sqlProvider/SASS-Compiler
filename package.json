@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/sqlProvider/SASS-Compiler#readme",
   "dependencies": {
+    "chokidar": "^1.6.0",
     "node-sass": "^3.8.0"
   }
 }
