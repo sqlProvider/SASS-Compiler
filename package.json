@@ -4,7 +4,8 @@
   "description": "Live SASS Compiler",
   "main": "app.js",
   "scripts": {
-    "test": "pm2 start app.js"
+    "test": "node app.js",
+    "testpm": "pm2 start app.js"
   },
   "repository": {
     "type": "git",
