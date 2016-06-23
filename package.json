@@ -1,0 +1,32 @@
+{
+  "name": "sass-compiler",
+  "version": "1.0.0",
+  "description": "Live SASS Compiler",
+  "main": "app.js",
+  "scripts": {
+    "test": "pm2 start app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqlProvider/SASS-Compiler.git"
+  },
+  "keywords": [
+    "sass",
+    "compiler",
+    "live",
+    "css",
+    "node-sass"
+  ],
+  "author": {
+    "name": "Semih KEŞKEK",
+    "email": "keskeksmh@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sqlProvider/SASS-Compiler/issues"
+  },
+  "homepage": "https://github.com/sqlProvider/SASS-Compiler#readme",
+  "dependencies": {
+    "node-sass": "^3.8.0"
+  }
+}
