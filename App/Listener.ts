@@ -4,6 +4,8 @@ import * as Chokidar from 'chokidar';
 import * as Path from 'path';
 import {WatcherExceptions} from './Exceptions';
 
+import {SASS} from './SASSCompiler'
+
 
 export class WatchManager{
 	mainPath: string;
@@ -25,10 +27,7 @@ export class WatchManager{
 					isSubDirctory: (paths.length > 2 ? true : false),
 					Path: path,
 					Watcher: new Watch(path),
-					subDirectoryName: ''
 				}
-			if(paths.length > 2 && false)
-				this.WatchList[this.WatchList.length - 1].subDirectoryName = paths[2];
 		});
 	}
 }
@@ -59,9 +58,7 @@ class Watch{
 			if(this.Event)
 				clearTimeout(this.Event);
 			this.Event = setTimeout(function () {
-				console.log(event);
-				console.log(path);
-				console.log(details);
+				SASS.render(details.watchedPath);
 			},50);
 			
 		});
@@ -80,7 +77,6 @@ interface ISiteWatcher{
 	Path: string;
 	Watcher: Watch;
 	isSubDirctory: boolean;
-	subDirectoryName: string;
 }
 interface ISubDirectoryWatcher{
 	Path: string;
