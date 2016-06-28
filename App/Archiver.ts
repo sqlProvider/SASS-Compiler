@@ -13,7 +13,10 @@ export module Archiver{
 		}
 
 		let date = new Date();
-		let dateArr = [date.getFullYear(), date.getMonth(), date.getDate(), '-', date.getHours(), date.getMinutes(), date.getSeconds(), date.getMilliseconds()];
+		let ml = date.getMilliseconds().toString();
+		ml = (date.getMilliseconds() < 100? '0': '') + ml;
+		ml = (date.getMilliseconds() < 10? '0': '') + ml;
+		let dateArr = [date.getFullYear(), date.getMonth(), date.getDate(), '-', date.getHours(), date.getMinutes(), date.getSeconds(), ml];
 		dateArr.forEach(function (e, i) {
 			if(e < 10)
 				dateArr[i] = '0' + e;
@@ -22,6 +25,5 @@ export module Archiver{
 
 		let fileName = dateArr.join('.') + '.zip';
 		Zipper(sitePath, historyPath + fileName, function(err) {});
-		
-	}
+	} 
 }
