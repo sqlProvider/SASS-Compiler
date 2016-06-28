@@ -2,5 +2,6 @@ Sites
 History
 node_modules
 typings
+.vscode/ftp-sync.json
 *.js
 *.js.map
