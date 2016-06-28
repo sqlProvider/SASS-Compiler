@@ -1,0 +1,23 @@
+{
+	"apps": [
+		{
+			"script": "app.js",
+			"watch": true,
+			"ignore_watch": [
+				"node_modules",
+				"History",
+				"Sites",
+				"typings",
+				".vscode",
+				".git",
+				".gitignore"
+			],
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"env_production": {
+				"NODE_ENV": "production"
+			}
+		}
+	]
+}
