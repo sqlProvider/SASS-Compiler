@@ -4,7 +4,7 @@ import * as Chokidar from 'chokidar';
 import * as Path from 'path';
 import {WatcherExceptions} from './Exceptions';
 
-import {SASS} from './SASSCompiler'
+import {SASS} from './SASSCompiler';
 
 
 export class WatchManager{
