@@ -10,7 +10,8 @@
 				"typings",
 				".vscode",
 				".git",
-				".gitignore"
+				".gitignore",
+				"README.md"
 			],
 			"env": {
 				"NODE_ENV": "development"
