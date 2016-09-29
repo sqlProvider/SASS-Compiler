@@ -1,2 +1,2 @@
-# C-SASS Compiler
+# SASS Compiler
 
